@@ -1,4 +1,8 @@
-FROM debian:stretch
+ARG	USER
+ARG	DISTRO
+FROM	$USER/$DISTRO-build
+# Arguments used after FROM must be specified again
+ARG	DISTRO
 
 MAINTAINER Harald Welte <laforge@gnumonks.org>
 
