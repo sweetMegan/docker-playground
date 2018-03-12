@@ -22,6 +22,7 @@ RUN	apt-get update && \
 		gawk \
 		gcc \
 		gcc-arm-none-eabi \
+		gdb \
 		git \
 		git-buildpackage \
 		libc-ares-dev \
@@ -49,5 +50,6 @@ RUN	apt-get update && \
 		pkg-config \
 		sqlite3 \
 		stow \
+		vim \
 		wget && \
 	apt-get clean
