@@ -92,7 +92,7 @@ network_create() {
 		network_remove
 	fi
 	echo Creating network $NET_NAME
-	docker network create --internal --subnet $NET $NET_NAME
+	docker network create --internal --subnet $NET --ipv6 --subnet fd02:db8:2::/64 $NET_NAME
 }
 
 network_remove() {
